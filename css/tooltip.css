@@ -1,0 +1,79 @@
+/*----------------------------------------------------*/
+/*
+	app-tooltip
+	version: 0.0.1
+	autor: niver quispe acuña
+	github: https://github.com/niver01?tab=repositories
+*/
+/*----------------------------------------------------*/
+
+.app-tooltip {
+	background-color: var(--app-tooltip-background-primary);
+	color: var(--app-tooltip-color-primary);
+	box-sizing: border-box;
+	padding: 12px;
+	max-width: 30%;
+
+	padding: 10px 8px;
+	font-size: 1rem;
+	border-radius: 2px;
+	min-height: 36px;
+	line-height: 120%;
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	z-index: 2000;
+
+	opacity: 0;
+	visibility: hidden;
+	/* transform: scale(0.2); */
+
+	transition: transform 0.4s, opacity 0.3s, visibility 0.5s;
+}
+
+.app-tooltip__content {
+	display: flex;
+}
+
+@media screen and (max-width: 768px) {
+	.app-tooltip {
+		max-width: 50%;
+	}
+
+	.app-tooltip__content {
+		flex-direction: column;
+	}
+}
+
+.app-tooltip__figure {
+	width: 14rem;
+	height: 10rem;
+	overflow: hidden;
+	padding-right: 16px;
+}
+
+@media screen and (max-width: 768px) {
+	.app-tooltip__figure {
+		width: 100%;
+		padding-right: 0;
+		margin-bottom: 16px;
+	}
+}
+
+.app-tooltip__image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.app-tooltip__description {
+	flex: 1;
+}
+
+.app-tooltip__description__title {
+	text-align: center;
+	font-size: 1.4em;
+	margin-bottom: 16px;
+}

@@ -1,0 +1,55 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f2f2f2;
+	font-size: 16px;
+	font-family: sans-serif;
+	margin-top: 3em;
+}
+
+:root {
+	--app-tooltip-background-primary: #323232;
+	--app-tooltip-color-primary: #ffffff;
+}
+
+h1 {
+	font-size: 3rem;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+.container {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.container__title {
+	text-align: center;
+	font-weight: normal;
+}
+
+.container__button {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 2rem 0 4rem 0;
+}
+
+.container__button button {
+	display: inline-block;
+	padding: 0 1em;
+	width: 8rem;
+	line-height: 3;
+	border: 0;
+	outline: 0;
+	border-style: none;
+	background-color: tomato;
+	color: #fff;
+	cursor: pointer;
+	margin-bottom: 1rem;
+}
